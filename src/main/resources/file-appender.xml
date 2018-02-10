@@ -14,7 +14,7 @@
 		<file>${LOG_FILE}.log</file>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-			<!-- daily logging inferred from the file name -->
+			<!-- daily rollover inferred from the file name -->
 			<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 			<maxFileSize>${LOG_FILE_MAX_SIZE:-10MB}</maxFileSize>
 			<maxHistory>${LOG_FILE_MAX_HISTORY:-20}</maxHistory>
